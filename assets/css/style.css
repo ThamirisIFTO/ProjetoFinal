@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+
+:root{
+    --cor-principal: #002747;
+    --cor-texto: #f0f8ff;
+}
+
+body{
+     margin: 0;
+}
+
+header{
+    display: flex;
+    background-color: var(--cor-principal);
+    margin: 0;
+}
+
+.logo{
+    height: 90px;    
+}
+.cabecalho{
+    color: var(--cor-texto);
+    font-size: 25px;
+    margin: 0; 
+    
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: var(--cor-principal);
+}
+nav ul li{
+    list-style-type: none;
+    background-color: var(--cor-principal);
+    margin: 0 auto;
+}
+nav ul li a{
+    color: var(--cor-texto);
+    text-decoration: none;
+    
+}
+
+
+h1{
+    text-align: center;
+    font-size: 30px; 
+    margin-bottom: 50px;
+}
+
+p{
+    text-indent: 30px;
+    line-height: 20px;
+    text-align: justify;
+    padding: 5px;
+}
+.dianas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img{
+    height: 200px;
+}    
+
+iframe{
+    padding: 25px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.bibliografia h3 p{
+     margin: 0;
+}
+footer{
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    height: 50px;
+    overflow: auto;
+}
+footer p{
+    text-align: center;
+}
+@media screen and (min-width: 420px){
+    nav ul{
+        flex-flow: row wrap; 
+    }
+    iframe{
+        width: 60%;
+    }
+}
